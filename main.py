@@ -1,9 +1,5 @@
 
-def task_4_2():
-    ids = {'user1': [213, 213, 213, 15, 213],
-           'user2': [54, 54, 119, 119, 119],
-           'user3': [213, 98, 98, 35]}
-
+def task_4_2(ids: list):
     ids_values = []
     for geo_ids in ids.values():
         ids_values += geo_ids
@@ -22,10 +18,3 @@ def task_4_5():
     for n in source[-2::-1]:
         dct = {n: dct}
     return dct
-
-
-if __name__ == '__main__':
-    print(task_4_2())
-    print(task_4_4())
-    print(task_4_5())
-
